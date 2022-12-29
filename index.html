@@ -8,20 +8,83 @@
 
   <body>
     <h1 id="title">My form</h1>
-    <p id="description">description</p>
-    <form id="survey-form"action="">
-      
+    <p id="description">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quas
+      voluptatibus dolore nulla sit possimus architecto sapiente inventore.
+      Asperiores dolore deleniti voluptatibus fugiat voluptate rerum eaque
+      perspiciatis delectus officiis modi?
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter you name"
+        required
+      /><br /><br /><br />
+      <label for="email" id="email-label">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter you email"
+        required
+      /><br /><br /><br />
+      <label for="age" id="number-label">Age</label>
+      <input
+        id="number"
+        type="number"
+        placeholder="Age"
+        min="10"
+        max="99"
+        required
+      /><br /><br /><br />
 
-        <div class="form-group">
-          <input type="text" name="" id="name">
-        </div>
-     
-      
+      <select id="dropdown">
+        <option value="">Student</option>
+        <option value="">Full time job</option>
+        <option value="">Full time learner</option>
+      </select>
+
+      <p>
+        <input type="radio" id="taste_1" name="option" value="Definitely" />
+        <label for="option_1">Definitely</label>
+      </p>
+      <p>
+        <input type="radio" id="taste_2" name="option" value="Maybe" />
+        <label for="option_2">Maybe</label>
+      </p>
+      <p>
+        <input type="radio" id="taste_2" name="option" value="Not Sure" />
+        <label for="option_3">Not Sure</label>
+      </p>
+
+      <p>What would you like to see improved? (Check all that apply)</p>
+
+      <input
+        type="checkbox"
+        name="like"
+        value="Front-end Projects"
+        id=""
+      />Front-end Projects <br />
+      <input type="checkbox" name="like" id="Back-end Projects" />Back-end
+      Projects<br />
+      <input type="checkbox" name="like" id="Data Visualization" />Data
+      Visualization<br />
+      <input type="checkbox" name="like" id="Challenges" />Challenges<br />
+      <input type="checkbox" name="like" id="Open Source Community" />Open
+      Source Community<br />
+      <input type="checkbox" name="like" id="Gitter help rooms" />Gitter help
+      rooms<br />
+      <input type="checkbox" name="like" id="Videos" />Videos<br />
+      <input type="checkbox" name="like" id="City Meetups" />City Meetups<br />
+      <input type="checkbox" name="like" id="Wiki" />Wiki<br />
+      <input type="checkbox" name="like" id="Forum" />Forum<br />
+      <input type="checkbox" name="like" id="Additional Courses" />Additional
+      Courses<br />
+
+      <textarea name="" id="" cols="30" rows="10"> </textarea>
+      <button type="submit" id="submit">Submit</button>
     </form>
-
-
-
-
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
